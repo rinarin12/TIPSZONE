@@ -1,29 +1,124 @@
-<form action="https://formspree.io/f/xppddaen" method="POST">
-  <label for="nama">Nama</label>
-  <input
-    type="text"
-    id="nama"
-    name="nama"
-    placeholder="Masukkan nama kamu"
-    required
-  >
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontak - TIPSZONE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-  <label for="email">Email</label>
-  <input
-    type="email"
-    id="email"
-    name="email"
-    placeholder="Masukkan email kamu"
-    required
-  >
+  <!-- HEADER -->
+  <header>
+    <div class="wrap nav">
+      <a href="index.html" class="brand">TIPSZONE</a>
 
-  <label for="pesan">Pesan</label>
-  <textarea
-    id="pesan"
-    name="pesan"
-    placeholder="Tulis pesan kamu..."
-    required
-  ></textarea>
+      <nav>
+        <a href="index.html">Beranda</a>
+        <a href="komputer.html">Tips Komputer</a>
+        <a href="belajar.html">Tips Belajar</a>
+        <a href="kehidupan.html">Tips Kehidupan</a>
+        <a href="tentang.html">Tentang Kami</a>
+        <a href="kontak.html" class="active">Kontak</a>
+      </nav>
 
-  <button type="submit">Kirim Pesan</button>
-</form>
+      <button id="themeToggle" type="button">🌙</button>
+    </div>
+  </header>
+
+  <!-- KONTEN KONTAK -->
+  <main class="contact-section">
+    <div class="contact-container">
+
+      <!-- INFORMASI -->
+      <div class="contact-info">
+        <span class="contact-label">HUBUNGI KAMI</span>
+
+        <h1>Ada Pertanyaan?</h1>
+
+        <p>
+          Punya pertanyaan, saran, atau ingin berbagi pengalaman?
+          Jangan ragu untuk menghubungi kami melalui formulir ini.
+        </p>
+
+        <div class="contact-detail">
+          <div class="contact-icon">✉️</div>
+          <div>
+            <h3>Email</h3>
+            <p>Kirim pertanyaan dan saran kepada kami.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">💬</div>
+          <div>
+            <h3>Pesan</h3>
+            <p>Sampaikan pesan kamu melalui formulir.</p>
+          </div>
+        </div>
+
+        <div class="contact-detail">
+          <div class="contact-icon">🌐</div>
+          <div>
+            <h3>TIPSZONE</h3>
+            <p>Berbagi tips dan informasi bermanfaat.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- FORMULIR -->
+      <div class="contact-form">
+        <h2>Kirim Pesan</h2>
+
+        <p class="form-description">
+          Isi formulir berikut dengan lengkap.
+        </p>
+
+        <form action="https://formspree.io/f/xppddaen" method="POST">
+
+          <label for="nama">Nama Lengkap</label>
+          <input
+            type="text"
+            id="nama"
+            name="nama"
+            placeholder="Masukkan nama kamu"
+            required
+          >
+
+          <label for="email">Alamat Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="nama@email.com"
+            required
+          >
+
+          <label for="pesan">Pesan Kamu</label>
+          <textarea
+            id="pesan"
+            name="pesan"
+            placeholder="Tuliskan pertanyaan atau pesan kamu..."
+            required
+          ></textarea>
+
+          <button type="submit" class="contact-button">
+            Kirim Pesan <span>➜</span>
+          </button>
+
+        </form>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2026 TIPSZONE. Semua Hak Dilindungi.</p>
+    <p>Berbagi Tips, Menambah Pengetahuan.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
