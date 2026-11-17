@@ -1,20 +1,20 @@
 # TIPSZONE
 
-**Nama:** [Isi nama anggota/kelompok]  
+**Nama:** RIFA ARINAL HAQ 
 **Kelas:** XII RPL  
 **Judul/Tema:** TIPSZONE - Website Kumpulan Tips
 
 ## Deskripsi
-TIPSZONE adalah website informasi berisi tips sederhana tentang komputer, belajar, dan kehidupan sehari-hari. Website dibuat sebagai proyek akhir Cloud Computing menggunakan jalur **Opsi 1: Static Web Pro (Tanpa Database Cloud)**.
+TIPSZONE adalah website informasi yang berisi berbagai tips sederhana tentang komputer, belajar, dan kehidupan sehari-hari. Website ini dibuat sebagai proyek akhir Cloud Computing menggunakan Opsi 1: Static Web Pro (Tanpa Database Cloud).
 
 ## Fitur
-- Enam halaman HTML berbeda: Beranda, Tips Komputer, Tips Belajar, Tips Kehidupan, Tentang Kami, dan Kontak.
-- JavaScript DOM: tombol mode gelap/terang disimpan menggunakan localStorage.
-- Validasi formulir kontak menggunakan JavaScript dan alert.
+- Enam halaman HTML: Beranda, Tips Komputer, Tips Belajar, Tips Kehidupan, Tentang Kami, dan Kontak.
+- Tombol mode gelap dan terang menggunakan JavaScript dan localStorage.
+- Formulir kontak yang terhubung dengan Formspree untuk menerima pesan pengunjung tanpa database.
 - Tampilan responsif untuk HP dan laptop.
 
 ## Link Website
-[Isi setelah hosting aktif, contoh: https://USERNAME.github.io/tipszone/]
+[https://rinarin12.github.io/TIPSZONE/]
 
 ## Struktur File
 - index.html
@@ -27,4 +27,4 @@ TIPSZONE adalah website informasi berisi tips sederhana tentang komputer, belaja
 - script.js
 
 ## Hosting
-Website dapat dipublikasikan menggunakan GitHub Pages dari branch `main` dan folder `/ (root)`.
+Website dipublikasikan menggunakan GitHub Pages dari branch `main` dan folder `/ (root)`.
