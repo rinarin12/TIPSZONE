@@ -1,1 +1,470 @@
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Arial,sans-serif;line-height:1.65;background:#f5f8ff;color:#1f2937;transition:.2s}header{background:#fff;position:sticky;top:0;z-index:5;box-shadow:0 2px 12px #14213d14}.wrap{max-width:1080px;margin:auto;padding:0 20px}.nav{min-height:70px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}.brand{font-size:25px;font-weight:800;color:#2563eb;text-decoration:none;letter-spacing:1px}nav{display:flex;gap:6px;flex-wrap:wrap}nav a{padding:8px 10px;border-radius:8px;color:#243047;text-decoration:none;font-size:14px;font-weight:700}nav a:hover,nav a.active{background:#e8f0ff;color:#2563eb}.hero{background:linear-gradient(120deg,#14213d,#2563eb);color:#fff;padding:65px 0}.hero h1{font-size:clamp(34px,5vw,54px);line-height:1.12;margin:10px 0}.hero p{max-width:650px;color:#e4edff;font-size:17px}.eyebrow{color:#bfdbfe;font-weight:bold;letter-spacing:2px;font-size:13px}.btn,button{display:inline-block;border:0;background:#2563eb;color:#fff;padding:11px 17px;border-radius:8px;text-decoration:none;font-weight:700;cursor:pointer}.hero .btn{background:#fff;color:#2563eb;margin-top:10px}main{padding:38px 0 65px}.heading{margin-bottom:22px}.heading h1,.heading h2{color:#14213d;margin:0 0 5px}.heading p{color:#64748b;margin:0}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:17px}.card,.panel{background:#fff;border:1px solid #e3eaf5;border-radius:14px;padding:21px;box-shadow:0 5px 16px #14213d08}.card h3{margin:7px 0;color:#14213d}.card p,.panel p{color:#526174}.emoji{font-size:30px}.tag{display:inline-block;background:#e8f0ff;color:#2563eb;padding:3px 9px;border-radius:20px;font-size:12px;font-weight:bold}.actions{display:flex;gap:10px;align-items:center;flex-wrap:wrap;margin-top:18px}label{display:block;font-weight:bold;margin:12px 0 5px}input,textarea{width:100%;padding:11px;border:1px solid #cbd5e1;border-radius:8px;font:inherit}textarea{min-height:120px}form{max-width:650px}.muted{color:#64748b;font-size:13px}footer{background:#101b32;color:#cbd5e1;text-align:center;padding:22px}body.dark{background:#101827;color:#e5e7eb}body.dark header,body.dark .card,body.dark .panel{background:#1d293b;border-color:#344256}body.dark nav a{color:#e5e7eb}body.dark nav a.active,body.dark nav a:hover{background:#334766;color:#bfdbfe}body.dark .heading h1,body.dark .heading h2,body.dark .card h3{color:#f8fafc}body.dark .card p,body.dark .panel p,body.dark .heading p{color:#cbd5e1}@media(max-width:760px){.grid{grid-template-columns:repeat(2,1fr)}.nav{padding-top:12px;padding-bottom:12px}}@media(max-width:540px){.grid{grid-template-columns:1fr}.hero{padding:48px 0}nav a{font-size:12px;padding:7px}}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.65;
+  background: #f5f8ff;
+  color: #1f2937;
+  transition: .2s;
+}
+
+header {
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  box-shadow: 0 2px 12px #14213d14;
+}
+
+.wrap {
+  max-width: 1080px;
+  margin: auto;
+  padding: 0 20px;
+}
+
+.nav {
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.brand {
+  font-size: 25px;
+  font-weight: 800;
+  color: #2563eb;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+nav {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  padding: 8px 10px;
+  border-radius: 8px;
+  color: #243047;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+nav a:hover,
+nav a.active {
+  background: #e8f0ff;
+  color: #2563eb;
+}
+
+.hero {
+  background: linear-gradient(120deg, #14213d, #2563eb);
+  color: #fff;
+  padding: 65px 0;
+}
+
+.hero h1 {
+  font-size: clamp(34px, 5vw, 54px);
+  line-height: 1.12;
+  margin: 10px 0;
+}
+
+.hero p {
+  max-width: 650px;
+  color: #e4edff;
+  font-size: 17px;
+}
+
+.eyebrow {
+  color: #bfdbfe;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 13px;
+}
+
+.btn,
+button {
+  display: inline-block;
+  border: 0;
+  background: #2563eb;
+  color: #fff;
+  padding: 11px 17px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero .btn {
+  background: #fff;
+  color: #2563eb;
+  margin-top: 10px;
+}
+
+main {
+  padding: 38px 0 65px;
+}
+
+.heading {
+  margin-bottom: 22px;
+}
+
+.heading h1,
+.heading h2 {
+  color: #14213d;
+  margin: 0 0 5px;
+}
+
+.heading p {
+  color: #64748b;
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 17px;
+}
+
+.card,
+.panel {
+  background: #fff;
+  border: 1px solid #e3eaf5;
+  border-radius: 14px;
+  padding: 21px;
+  box-shadow: 0 5px 16px #14213d08;
+}
+
+.card h3 {
+  margin: 7px 0;
+  color: #14213d;
+}
+
+.card p,
+.panel p {
+  color: #526174;
+}
+
+.emoji {
+  font-size: 30px;
+}
+
+.tag {
+  display: inline-block;
+  background: #e8f0ff;
+  color: #2563eb;
+  padding: 3px 9px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin: 12px 0 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 11px;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font: inherit;
+}
+
+textarea {
+  min-height: 120px;
+}
+
+form {
+  max-width: 650px;
+}
+
+.muted {
+  color: #64748b;
+  font-size: 13px;
+}
+
+footer {
+  background: #101b32;
+  color: #cbd5e1;
+  text-align: center;
+  padding: 22px;
+}
+
+/* MODE GELAP */
+body.dark {
+  background: #101827;
+  color: #e5e7eb;
+}
+
+body.dark header,
+body.dark .card,
+body.dark .panel {
+  background: #1d293b;
+  border-color: #344256;
+}
+
+body.dark nav a {
+  color: #e5e7eb;
+}
+
+body.dark nav a.active,
+body.dark nav a:hover {
+  background: #334766;
+  color: #bfdbfe;
+}
+
+body.dark .heading h1,
+body.dark .heading h2,
+body.dark .card h3 {
+  color: #f8fafc;
+}
+
+body.dark .card p,
+body.dark .panel p,
+body.dark .heading p {
+  color: #cbd5e1;
+}
+
+/* ===== HALAMAN KONTAK TIPSZONE ===== */
+
+.contact-section {
+  padding: 55px 20px;
+  background: linear-gradient(135deg, #eaf1ff, #f8faff);
+}
+
+.contact-container {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 35px;
+  align-items: center;
+}
+
+.contact-info {
+  padding: 25px 10px;
+}
+
+.contact-label {
+  display: inline-block;
+  color: #2563eb;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 13px;
+  margin-bottom: 12px;
+}
+
+.contact-info h1 {
+  font-size: clamp(32px, 5vw, 45px);
+  line-height: 1.2;
+  color: #14213d;
+  margin: 0 0 15px;
+}
+
+.contact-info > p {
+  color: #64748b;
+  margin-bottom: 30px;
+}
+
+.contact-detail {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.contact-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  background: #dce8ff;
+  border-radius: 13px;
+  font-size: 22px;
+}
+
+.contact-detail h3 {
+  color: #14213d;
+  margin: 0;
+  font-size: 16px;
+}
+
+.contact-detail p {
+  color: #64748b;
+  margin: 2px 0 0;
+  font-size: 13px;
+}
+
+.contact-form {
+  background: #fff;
+  padding: 32px;
+  border-radius: 20px;
+  border: 1px solid #e3eaf5;
+  box-shadow: 0 12px 35px #14213d12;
+}
+
+.contact-form h2 {
+  color: #14213d;
+  margin: 0 0 5px;
+  font-size: 27px;
+}
+
+.form-description {
+  color: #64748b;
+  margin: 0 0 20px;
+  font-size: 14px;
+}
+
+.contact-form form {
+  max-width: 100%;
+}
+
+.contact-form label {
+  color: #243047;
+  margin-top: 16px;
+  font-size: 14px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #d8e0ed;
+  border-radius: 10px;
+  background: #f8faff;
+  font: inherit;
+  font-size: 14px;
+  outline: none;
+  transition: .2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px #2563eb18;
+  background: #fff;
+}
+
+.contact-form textarea {
+  min-height: 135px;
+  resize: vertical;
+}
+
+.contact-button {
+  width: 100%;
+  margin-top: 22px;
+  padding: 14px;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #14213d, #2563eb);
+  font-size: 15px;
+  transition: .2s;
+}
+
+.contact-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 18px #2563eb35;
+}
+
+.contact-button span {
+  margin-left: 8px;
+}
+
+/* MODE GELAP KONTAK */
+body.dark .contact-section {
+  background: #101827;
+}
+
+body.dark .contact-info h1,
+body.dark .contact-detail h3 {
+  color: #f8fafc;
+}
+
+body.dark .contact-info > p,
+body.dark .contact-detail p {
+  color: #cbd5e1;
+}
+
+body.dark .contact-form {
+  background: #1d293b;
+  border-color: #344256;
+}
+
+body.dark .contact-form h2,
+body.dark .contact-form label {
+  color: #f8fafc;
+}
+
+body.dark .contact-form input,
+body.dark .contact-form textarea {
+  background: #101827;
+  border-color: #475569;
+  color: #fff;
+}
+
+/* RESPONSIVE TABLET DAN HP */
+@media (max-width: 760px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .nav {
+    padding-top: 12px;
+    padding-bottom: 12px;
+  }
+
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .contact-section {
+    padding: 35px 15px;
+  }
+
+  .contact-info {
+    padding: 10px 5px;
+  }
+
+  .contact-form {
+    padding: 23px;
+  }
+}
+
+@media (max-width: 540px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .hero {
+    padding: 48px 0;
+  }
+
+  nav a {
+    font-size: 12px;
+    padding: 7px;
+  }
+}
