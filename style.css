@@ -17,8 +17,8 @@ html {
 body {
     font-family: Arial, sans-serif;
     line-height: 1.7;
-    background: #FAF5ED;
-    color: #493729;
+    background: #F5FBFA;
+    color: #24464A;
     transition: background 0.3s, color 0.3s;
     min-height: 100vh;
 }
@@ -60,7 +60,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    box-shadow: 0 2px 12px #49372914;
+    box-shadow: 0 2px 12px #24464A14;
 }
 
 .nav {
@@ -77,7 +77,7 @@ header {
 .brand {
     font-size: 25px;
     font-weight: 800;
-    color: #8B5E3C;
+    color: #167D83;
     letter-spacing: 1px;
     white-space: nowrap;
 }
@@ -94,7 +94,7 @@ nav a {
     display: inline-block;
     padding: 8px 10px;
     border-radius: 8px;
-    color: #493729;
+    color: #24464A;
     font-size: 14px;
     font-weight: 700;
     transition: 0.2s;
@@ -102,17 +102,21 @@ nav a {
 
 nav a:hover,
 nav a.active {
-    background: #F0E3D3;
-    color: #8B5E3C;
+    background: #DDF3F1;
+    color: #167D83;
 }
 
+/* Tombol hamburger */
 #menuToggle {
     display: none;
+    padding: 9px 13px;
+    font-size: 20px;
 }
 
+/* Tombol mode gelap */
 #themeToggle {
     border: none;
-    background: #8B5E3C;
+    background: #167D83;
     color: #FFFFFF;
     padding: 10px 14px;
     border-radius: 8px;
@@ -128,7 +132,7 @@ nav a.active {
 button {
     display: inline-block;
     border: none;
-    background: #8B5E3C;
+    background: #167D83;
     color: #FFFFFF;
     padding: 11px 17px;
     border-radius: 8px;
@@ -138,18 +142,18 @@ button {
 
 .btn:hover,
 button:hover {
-    background: #6F482F;
+    background: #11676C;
     transform: translateY(-1px);
 }
 
 .hero .btn {
     background: #FFFFFF;
-    color: #8B5E3C;
+    color: #167D83;
     margin-top: 10px;
 }
 
 .hero .btn:hover {
-    background: #F0E3D3;
+    background: #DDF3F1;
 }
 
 
@@ -158,7 +162,7 @@ button:hover {
 ===================================== */
 
 .hero {
-    background: linear-gradient(120deg, #493729, #A47752);
+    background: linear-gradient(120deg, #164F54, #167D83);
     color: #FFFFFF;
     padding: 70px 0;
 }
@@ -171,13 +175,13 @@ button:hover {
 
 .hero p {
     max-width: 680px;
-    color: #F5EBDD;
+    color: #E1F5F3;
     font-size: 17px;
     margin-top: 12px;
 }
 
 .eyebrow {
-    color: #E8D5BE;
+    color: #AEE4DF;
     font-weight: bold;
     letter-spacing: 2px;
     font-size: 13px;
@@ -198,7 +202,7 @@ main {
 
 .heading h1,
 .heading h2 {
-    color: #493729;
+    color: #24464A;
     margin-bottom: 7px;
     line-height: 1.3;
 }
@@ -208,7 +212,7 @@ main {
 }
 
 .heading p {
-    color: #806F60;
+    color: #668184;
     margin-top: 5px;
 }
 
@@ -226,28 +230,28 @@ main {
 .card,
 .panel {
     background: #FFFFFF;
-    border: 1px solid #E8D5BE;
+    border: 1px solid #D7EBE8;
     border-radius: 14px;
     padding: 23px;
-    box-shadow: 0 5px 16px #4937290D;
+    box-shadow: 0 5px 16px #24464A0D;
     min-width: 0;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
 .card:hover {
     transform: translateY(-4px);
-    box-shadow: 0 9px 22px #4937291A;
+    box-shadow: 0 9px 22px #24464A1A;
 }
 
 .card h3 {
     margin: 10px 0;
-    color: #493729;
+    color: #24464A;
     font-size: 19px;
 }
 
 .card p,
 .panel p {
-    color: #6F5D4D;
+    color: #587174;
     margin-bottom: 12px;
 }
 
@@ -258,8 +262,8 @@ main {
 
 .tag {
     display: inline-block;
-    background: #F0E3D3;
-    color: #805333;
+    background: #DDF3F1;
+    color: #167D83;
     padding: 4px 11px;
     border-radius: 20px;
     font-size: 12px;
@@ -271,7 +275,7 @@ main {
 .intro ul {
     padding-left: 20px;
     margin: 12px 0;
-    color: #6F5D4D;
+    color: #587174;
 }
 
 .card li,
@@ -281,7 +285,7 @@ main {
 }
 
 .card strong {
-    color: #493729;
+    color: #24464A;
 }
 
 
@@ -294,19 +298,19 @@ main {
     margin: 28px 0;
     padding: 25px;
     border-radius: 14px;
-    background: #F0E3D3;
+    background: #DDF3F1;
 }
 
 .intro h2,
 .closing h2 {
-    color: #493729;
+    color: #24464A;
     margin-bottom: 10px;
     font-size: 23px;
 }
 
 .intro p,
 .closing p {
-    color: #6F5D4D;
+    color: #587174;
 }
 
 
@@ -336,24 +340,24 @@ label {
     display: block;
     font-weight: bold;
     margin: 13px 0 6px;
-    color: #493729;
+    color: #24464A;
 }
 
 input,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #D8C5B1;
+    border: 1px solid #C8DFDC;
     border-radius: 8px;
     background: #FFFFFF;
-    color: #493729;
+    color: #24464A;
     outline: none;
 }
 
 input:focus,
 textarea:focus {
-    border-color: #A47752;
-    box-shadow: 0 0 0 3px #A4775220;
+    border-color: #167D83;
+    box-shadow: 0 0 0 3px #167D8318;
 }
 
 textarea {
@@ -362,7 +366,7 @@ textarea {
 }
 
 .muted {
-    color: #806F60;
+    color: #668184;
     font-size: 13px;
 }
 
@@ -373,7 +377,7 @@ textarea {
 
 .contact-section {
     padding: 55px 20px;
-    background: linear-gradient(135deg, #F0E3D3, #FAF5ED);
+    background: linear-gradient(135deg, #DDF3F1, #F5FBFA);
 }
 
 .contact-container {
@@ -393,7 +397,7 @@ textarea {
 
 .contact-label {
     display: inline-block;
-    color: #8B5E3C;
+    color: #167D83;
     font-weight: 800;
     letter-spacing: 2px;
     font-size: 13px;
@@ -403,12 +407,12 @@ textarea {
 .contact-info h1 {
     font-size: clamp(30px, 5vw, 45px);
     line-height: 1.2;
-    color: #493729;
+    color: #24464A;
     margin-bottom: 15px;
 }
 
 .contact-info > p {
-    color: #806F60;
+    color: #668184;
     margin-bottom: 25px;
 }
 
@@ -425,18 +429,18 @@ textarea {
     flex-shrink: 0;
     display: grid;
     place-items: center;
-    background: #E8D5BE;
+    background: #CBE9E5;
     border-radius: 13px;
     font-size: 22px;
 }
 
 .contact-detail h3 {
-    color: #493729;
+    color: #24464A;
     font-size: 16px;
 }
 
 .contact-detail p {
-    color: #806F60;
+    color: #668184;
     font-size: 13px;
 }
 
@@ -444,19 +448,19 @@ textarea {
     background: #FFFFFF;
     padding: 32px;
     border-radius: 20px;
-    border: 1px solid #E8D5BE;
-    box-shadow: 0 12px 35px #49372912;
+    border: 1px solid #D7EBE8;
+    box-shadow: 0 12px 35px #24464A12;
     min-width: 0;
 }
 
 .contact-form h2 {
-    color: #493729;
+    color: #24464A;
     margin-bottom: 5px;
     font-size: 27px;
 }
 
 .form-description {
-    color: #806F60;
+    color: #668184;
     margin-bottom: 20px;
     font-size: 14px;
 }
@@ -466,7 +470,7 @@ textarea {
 }
 
 .contact-form label {
-    color: #493729;
+    color: #24464A;
     margin-top: 16px;
     font-size: 14px;
 }
@@ -474,9 +478,9 @@ textarea {
 .contact-form input,
 .contact-form textarea {
     padding: 13px 14px;
-    border: 1px solid #D8C5B1;
+    border: 1px solid #C8DFDC;
     border-radius: 10px;
-    background: #FAF5ED;
+    background: #F5FBFA;
     font-size: 14px;
     max-width: 100%;
 }
@@ -491,12 +495,12 @@ textarea {
     margin-top: 22px;
     padding: 14px;
     border-radius: 10px;
-    background: linear-gradient(120deg, #6F482F, #A47752);
+    background: linear-gradient(120deg, #11676C, #24999A);
     font-size: 15px;
 }
 
 .contact-button:hover {
-    background: #6F482F;
+    background: #11676C;
 }
 
 .contact-button span {
@@ -509,8 +513,8 @@ textarea {
 ===================================== */
 
 footer {
-    background: #493729;
-    color: #F5EBDD;
+    background: #164F54;
+    color: #DDF3F1;
     text-align: center;
     padding: 23px 15px;
     font-size: 14px;
@@ -522,31 +526,31 @@ footer {
 ===================================== */
 
 body.dark {
-    background: #211A15;
-    color: #F5EBDD;
+    background: #142426;
+    color: #E3F1EF;
 }
 
 body.dark header,
 body.dark .card,
 body.dark .panel,
 body.dark .contact-form {
-    background: #30251D;
-    border-color: #5B4635;
+    background: #203638;
+    border-color: #365456;
 }
 
 body.dark .brand,
 body.dark .contact-label {
-    color: #D5AD88;
+    color: #83D2CA;
 }
 
 body.dark nav a {
-    color: #F5EBDD;
+    color: #E3F1EF;
 }
 
 body.dark nav a.active,
 body.dark nav a:hover {
-    background: #493729;
-    color: #F5D8B8;
+    background: #315052;
+    color: #AEE4DF;
 }
 
 body.dark .heading h1,
@@ -557,7 +561,7 @@ body.dark .contact-detail h3,
 body.dark .contact-form h2,
 body.dark .contact-form label,
 body.dark label {
-    color: #FFF5E8;
+    color: #F0FAF8;
 }
 
 body.dark .heading p,
@@ -566,50 +570,50 @@ body.dark .panel p,
 body.dark .contact-info > p,
 body.dark .contact-detail p,
 body.dark .form-description {
-    color: #D8C7B5;
+    color: #BDD3D0;
 }
 
 body.dark .card ul,
 body.dark .intro ul {
-    color: #D8C7B5;
+    color: #BDD3D0;
 }
 
 body.dark .card strong {
-    color: #FFF5E8;
+    color: #F0FAF8;
 }
 
 body.dark .intro,
 body.dark .closing,
 body.dark .contact-section {
-    background: #211A15;
+    background: #142426;
 }
 
 body.dark .intro h2,
 body.dark .closing h2 {
-    color: #FFF5E8;
+    color: #F0FAF8;
 }
 
 body.dark .intro p,
 body.dark .closing p {
-    color: #D8C7B5;
+    color: #BDD3D0;
 }
 
 body.dark input,
 body.dark textarea,
 body.dark .contact-form input,
 body.dark .contact-form textarea {
-    background: #211A15;
-    border-color: #66503D;
+    background: #142426;
+    border-color: #466466;
     color: #FFFFFF;
 }
 
 body.dark .contact-icon {
-    background: #493729;
+    background: #315052;
 }
 
 body.dark .tag {
-    background: #493729;
-    color: #F5D8B8;
+    background: #315052;
+    color: #AEE4DF;
 }
 
 
@@ -687,7 +691,7 @@ body.dark .tag {
         align-items: stretch;
         gap: 5px;
         padding-top: 10px;
-        border-top: 1px solid #E8D5BE;
+        border-top: 1px solid #D7EBE8;
     }
 
     #navMenu.show {
@@ -774,7 +778,7 @@ body.dark .tag {
     }
 
     body.dark #navMenu {
-        border-color: #5B4635;
+        border-color: #365456;
     }
 }
 
@@ -823,7 +827,7 @@ button:focus-visible,
 a:focus-visible,
 input:focus-visible,
 textarea:focus-visible {
-    outline: 3px solid #A47752;
+    outline: 3px solid #70C1C2;
     outline-offset: 3px;
 }
 
