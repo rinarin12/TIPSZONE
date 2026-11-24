@@ -1,11 +1,14 @@
 
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta name="description" content="TIPSZONE menyediakan berbagai tips belajar agar kegiatan belajar lebih teratur dan menyenangkan.">
+    <meta name="description" content="TIPSZONE menyediakan berbagai tips belajar agar kegiatan belajar lebih teratur, efektif, dan menyenangkan.">
+
+    <meta name="keywords" content="tips belajar, pendidikan, jadwal belajar, konsentrasi, catatan">
 
     <title>Tips Belajar | TIPSZONE</title>
 
@@ -14,21 +17,46 @@
 
 <body>
 
-    <!-- Bagian Header -->
+    <!-- =================================
+         HEADER DAN NAVIGASI
+    ================================== -->
+
     <header>
         <div class="wrap nav">
 
-            <a class="brand" href="index.html">TIPSZONE.</a>
+            <a class="brand" href="index.html">
+                TIPSZONE.
+            </a>
 
-            <nav>
+            <!-- Tombol Menu HP -->
+            <button
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Navigasi -->
+            <nav id="navMenu">
+
                 <a href="index.html">Beranda</a>
+
                 <a href="komputer.html">Tips Komputer</a>
-                <a href="belajar.html" class="active">Tips Belajar</a>
+
+                <a href="belajar.html" class="active">
+                    Tips Belajar
+                </a>
+
                 <a href="kehidupan.html">Tips Kehidupan</a>
+
                 <a href="tentang.html">Tentang Kami</a>
+
                 <a href="kontak.html">Kontak</a>
+
             </nav>
 
+            <!-- Mode Gelap -->
             <button id="themeToggle" type="button">
                 Mode Gelap
             </button>
@@ -36,106 +64,443 @@
         </div>
     </header>
 
-    <!-- Konten Utama -->
+
+    <!-- =================================
+         KONTEN UTAMA
+    ================================== -->
+
     <main class="wrap">
 
-        <!-- Judul Halaman -->
-        <section class="heading">
-            <span class="tag">TIPS DAN INFORMASI</span>
 
-            <h1>Tips Belajar</h1>
+        <!-- JUDUL HALAMAN -->
+
+        <section class="heading">
+
+            <span class="eyebrow">
+                TIPS DAN INFORMASI PENDIDIKAN
+            </span>
+
+            <h1>
+                Tips Belajar
+            </h1>
 
             <p>
                 Belajar tidak harus selalu sulit. Dengan kebiasaan
                 yang baik dan pengaturan waktu yang tepat, kegiatan
-                belajar bisa menjadi lebih terarah dan menyenangkan.
+                belajar bisa menjadi lebih terarah, efektif,
+                dan menyenangkan.
             </p>
+
         </section>
 
-        <!-- Pengantar -->
+
+        <!-- PENGANTAR -->
+
         <section class="intro">
-            <h2>Mulai dari Kebiasaan Sederhana</h2>
+
+            <h2>
+                Pentingnya Kebiasaan Belajar yang Baik
+            </h2>
 
             <p>
-                Ada beberapa cara sederhana yang bisa diterapkan
-                untuk membantu meningkatkan konsentrasi, mengatur
-                waktu, dan memahami materi pelajaran.
-                Berikut beberapa tips yang bisa kamu coba.
+                Belajar merupakan kegiatan yang dilakukan untuk
+                memperoleh pengetahuan dan memahami berbagai
+                informasi baru. Agar materi lebih mudah dipahami,
+                diperlukan kebiasaan belajar yang teratur.
             </p>
+
+            <p>
+                Setiap orang memiliki cara belajar yang berbeda.
+                Ada yang lebih mudah memahami materi melalui
+                membaca, menulis, melihat gambar, maupun
+                mengerjakan latihan. Oleh karena itu, penting
+                untuk menemukan cara belajar yang sesuai.
+            </p>
+
         </section>
 
-        <!-- Daftar Tips -->
+
+        <!-- DAFTAR TIPS BELAJAR -->
+
         <section class="tips-section">
+
+            <div class="heading">
+
+                <h2>
+                    6 Tips Belajar Lebih Efektif
+                </h2>
+
+                <p>
+                    Berikut beberapa kebiasaan sederhana yang
+                    dapat diterapkan untuk membantu kegiatan belajar.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <!-- TIPS 1 -->
+
+                <article class="card">
+
+                    <div class="emoji">🗓️</div>
+
+                    <h3>
+                        Buat Jadwal Belajar
+                    </h3>
+
+                    <p>
+                        Atur waktu belajar sesuai kegiatan
+                        sehari-hari. Jadwal membantu membagi
+                        waktu untuk belajar, mengerjakan tugas,
+                        dan beristirahat.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Tentukan waktu belajar.</li>
+                        <li>Catat tugas yang harus dikerjakan.</li>
+                        <li>Susun materi berdasarkan prioritas.</li>
+                        <li>Usahakan mengikuti jadwal yang dibuat.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Manajemen Waktu
+                    </span>
+
+                </article>
+
+
+                <!-- TIPS 2 -->
+
+                <article class="card">
+
+                    <div class="emoji">📝</div>
+
+                    <h3>
+                        Buat Catatan Ringkas
+                    </h3>
+
+                    <p>
+                        Catat bagian penting dari materi
+                        menggunakan bahasamu sendiri.
+                        Catatan ringkas dapat membantu
+                        mengingat informasi yang telah dipelajari.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Tulis inti pembahasan.</li>
+                        <li>Gunakan poin-poin sederhana.</li>
+                        <li>Tandai informasi penting.</li>
+                        <li>Baca kembali catatan secara berkala.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Catatan
+                    </span>
+
+                </article>
+
+
+                <!-- TIPS 3 -->
+
+                <article class="card">
+
+                    <div class="emoji">⏱️</div>
+
+                    <h3>
+                        Belajar dengan Jeda
+                    </h3>
+
+                    <p>
+                        Berikan waktu istirahat di sela-sela
+                        belajar. Jeda dapat membantu menjaga
+                        konsentrasi dan memberikan kesempatan
+                        untuk menyegarkan pikiran.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Belajar dalam beberapa sesi.</li>
+                        <li>Ambil jeda ketika mulai lelah.</li>
+                        <li>Gunakan waktu istirahat dengan baik.</li>
+                        <li>Lanjutkan belajar setelah siap.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Konsentrasi
+                    </span>
+
+                </article>
+
+
+                <!-- TIPS 4 -->
+
+                <article class="card">
+
+                    <div class="emoji">📵</div>
+
+                    <h3>
+                        Kurangi Gangguan
+                    </h3>
+
+                    <p>
+                        Gangguan dari lingkungan sekitar
+                        dapat membuat kegiatan belajar
+                        menjadi kurang fokus. Cobalah
+                        menciptakan suasana yang mendukung.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Jauhkan ponsel jika tidak diperlukan.</li>
+                        <li>Matikan notifikasi yang mengganggu.</li>
+                        <li>Pilih tempat yang lebih tenang.</li>
+                        <li>Fokus pada materi yang dipelajari.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Fokus Belajar
+                    </span>
+
+                </article>
+
+
+                <!-- TIPS 5 -->
+
+                <article class="card">
+
+                    <div class="emoji">💻</div>
+
+                    <h3>
+                        Manfaatkan Teknologi
+                    </h3>
+
+                    <p>
+                        Teknologi dapat membantu mencari
+                        informasi tambahan dan memahami
+                        materi melalui sumber pembelajaran
+                        digital yang sesuai.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Gunakan internet untuk mencari referensi.</li>
+                        <li>Tonton video pembelajaran.</li>
+                        <li>Manfaatkan aplikasi pendidikan.</li>
+                        <li>Periksa kebenaran sumber informasi.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Teknologi Pendidikan
+                    </span>
+
+                </article>
+
+
+                <!-- TIPS 6 -->
+
+                <article class="card">
+
+                    <div class="emoji">📖</div>
+
+                    <h3>
+                        Ulangi Materi yang Dipelajari
+                    </h3>
+
+                    <p>
+                        Mengulang materi dapat membantu
+                        memahami kembali informasi yang
+                        sudah dipelajari dan mengetahui
+                        bagian yang masih belum dipahami.
+                    </p>
+
+                    <p><strong>Cara menerapkan:</strong></p>
+
+                    <ul>
+                        <li>Baca kembali materi sebelumnya.</li>
+                        <li>Kerjakan latihan soal.</li>
+                        <li>Pelajari bagian yang belum dipahami.</li>
+                        <li>Tanyakan hal yang masih membingungkan.</li>
+                    </ul>
+
+                    <span class="tag">
+                        Pemahaman Materi
+                    </span>
+
+                </article>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- SUASANA BELAJAR -->
+
+        <section class="intro">
+
+            <h2>
+                Ciptakan Suasana Belajar yang Nyaman
+            </h2>
+
+            <p>
+                Lingkungan belajar yang nyaman dapat membantu
+                kegiatan belajar menjadi lebih teratur.
+                Tempat belajar tidak harus mewah, tetapi
+                sebaiknya bersih dan memiliki perlengkapan
+                yang dibutuhkan.
+            </p>
+
+            <ul>
+                <li>Pilih tempat belajar yang cukup tenang.</li>
+                <li>Rapikan meja dan perlengkapan belajar.</li>
+                <li>Siapkan buku serta alat tulis sebelum mulai.</li>
+                <li>Pastikan pencahayaan ruangan cukup.</li>
+                <li>Atur posisi duduk agar tetap nyaman.</li>
+            </ul>
+
+        </section>
+
+
+        <!-- KEBIASAAN BELAJAR -->
+
+        <section class="tips-section">
+
+            <div class="heading">
+
+                <h2>
+                    Kebiasaan Positif Saat Belajar
+                </h2>
+
+                <p>
+                    Selain menerapkan tips belajar, biasakan
+                    beberapa hal berikut agar kegiatan belajar
+                    lebih terarah.
+                </p>
+
+            </div>
+
 
             <div class="grid">
 
                 <article class="card">
-                    <div class="emoji">🗓️</div>
 
-                    <h3>Buat Jadwal Belajar</h3>
+                    <div class="emoji">🎯</div>
+
+                    <h3>
+                        Tentukan Target
+                    </h3>
 
                     <p>
-                        Atur waktu belajar sesuai kegiatan sehari-hari.
-                        Tentukan target kecil agar tugas tidak menumpuk
-                        dan materi lebih mudah dipelajari.
+                        Buat target belajar yang jelas dan
+                        sesuai kemampuan agar kamu mengetahui
+                        materi yang ingin diselesaikan.
                     </p>
 
-                    <span class="tag">Manajemen Waktu</span>
                 </article>
 
-                <article class="card">
-                    <div class="emoji">📝</div>
 
-                    <h3>Buat Catatan Ringkas</h3>
+                <article class="card">
+
+                    <div class="emoji">🙋</div>
+
+                    <h3>
+                        Jangan Takut Bertanya
+                    </h3>
 
                     <p>
-                        Catat bagian penting dari materi menggunakan
-                        bahasamu sendiri. Gunakan poin-poin agar
-                        informasi lebih mudah dipahami.
+                        Jika ada materi yang belum dipahami,
+                        tanyakan kepada guru atau teman
+                        agar mendapatkan penjelasan tambahan.
                     </p>
 
-                    <span class="tag">Catatan</span>
                 </article>
 
-                <article class="card">
-                    <div class="emoji">⏱️</div>
 
-                    <h3>Belajar dengan Jeda</h3>
+                <article class="card">
+
+                    <div class="emoji">📚</div>
+
+                    <h3>
+                        Perbanyak Referensi
+                    </h3>
 
                     <p>
-                        Berikan waktu istirahat di sela-sela belajar.
-                        Cara ini dapat membantu menjaga konsentrasi
-                        agar tidak mudah merasa lelah.
+                        Gunakan buku, modul, dan sumber
+                        pembelajaran terpercaya untuk
+                        menambah pemahaman materi.
                     </p>
 
-                    <span class="tag">Konsentrasi</span>
                 </article>
 
             </div>
 
         </section>
 
-        <!-- Penutup -->
+
+        <!-- PENUTUP -->
+
         <section class="closing">
-            <h2>Semangat Belajar!</h2>
+
+            <h2>
+                Terus Semangat dalam Belajar!
+            </h2>
 
             <p>
-                Tidak perlu terburu-buru. Mulailah dari langkah kecil
-                dan lakukan secara konsisten.
+                Setiap proses belajar membutuhkan waktu
+                dan usaha. Tidak perlu terburu-buru.
+                Mulailah dari kebiasaan sederhana, lakukan
+                secara konsisten, dan jangan ragu untuk
+                terus mencoba hal baru.
             </p>
+
+            <div class="actions">
+
+                <a href="kehidupan.html" class="btn">
+                    Lihat Tips Kehidupan
+                </a>
+
+                <a href="index.html" class="btn">
+                    Kembali ke Beranda
+                </a>
+
+            </div>
+
         </section>
 
     </main>
 
-    <!-- Bagian Footer -->
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
     <footer>
+
         <p>
-            © 2026 <strong>TIPSZONE</strong>.
+            © 2026 <strong>TIPSZONE</strong>
+        </p>
+
+        <p>
             Berbagi tips dan informasi bermanfaat.
         </p>
+
     </footer>
+
+
+    <!-- JAVASCRIPT -->
 
     <script src="script.js"></script>
 
 </body>
+
 </html>
