@@ -1,35 +1,473 @@
+<!DOCTYPE html>
+<html lang="id">
 
-<header>
-    <div class="wrap nav">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <!-- Logo Website -->
-        <a class="brand" href="index.html">
-            TIPSZONE.
-        </a>
+    <meta name="description" content="TIPSZONE menyediakan berbagai tips praktis seputar komputer, belajar, dan kehidupan sehari-hari.">
 
-        <!-- Tombol Menu HP -->
-        <button
-            id="menuToggle"
-            type="button"
-            aria-label="Buka menu"
-            aria-expanded="false">
-            ☰
-        </button>
+    <meta name="keywords" content="TIPSZONE, tips komputer, tips belajar, tips kehidupan, informasi">
 
-        <!-- Navigasi Website -->
-        <nav id="navMenu">
-            <a href="index.html" class="active">Beranda</a>
-            <a href="komputer.html">Tips Komputer</a>
-            <a href="belajar.html">Tips Belajar</a>
-            <a href="kehidupan.html">Tips Kehidupan</a>
-            <a href="tentang.html">Tentang Kami</a>
-            <a href="kontak.html">Kontak</a>
-        </nav>
+    <meta name="author" content="TIPSZONE">
 
-        <!-- Tombol Mode Gelap -->
-        <button id="themeToggle" type="button">
-            Mode Gelap
-        </button>
+    <title>Beranda | TIPSZONE</title>
 
-    </div>
-</header>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =================================
+         HEADER DAN NAVIGASI
+    ================================== -->
+
+    <header>
+        <div class="wrap nav">
+
+            <a class="brand" href="index.html">
+                TIPSZONE.
+            </a>
+
+            <!-- Tombol Menu HP -->
+            <button
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded="false">
+                ☰
+            </button>
+
+            <!-- Daftar Menu -->
+            <nav id="navMenu">
+
+                <a href="index.html" class="active">
+                    Beranda
+                </a>
+
+                <a href="komputer.html">
+                    Tips Komputer
+                </a>
+
+                <a href="belajar.html">
+                    Tips Belajar
+                </a>
+
+                <a href="kehidupan.html">
+                    Tips Kehidupan
+                </a>
+
+                <a href="tentang.html">
+                    Tentang Kami
+                </a>
+
+                <a href="kontak.html">
+                    Kontak
+                </a>
+
+            </nav>
+
+            <!-- Tombol Mode Gelap -->
+            <button id="themeToggle" type="button">
+                Mode Gelap
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =================================
+         HERO SECTION
+    ================================== -->
+
+    <section class="hero">
+
+        <div class="wrap">
+
+            <span class="eyebrow">
+                PENGETAHUAN KECIL, MANFAAT BESAR
+            </span>
+
+            <h1>
+                Temukan Tips Praktis untuk Hari-Harimu
+            </h1>
+
+            <p>
+                Selamat datang di TIPSZONE! Temukan berbagai
+                tips sederhana dan informasi bermanfaat seputar
+                komputer, belajar, serta kehidupan sehari-hari.
+                Mulai dari hal kecil untuk membantu aktivitasmu
+                menjadi lebih mudah dan teratur.
+            </p>
+
+            <div class="actions">
+
+                <a href="#kategori" class="btn">
+                    Jelajahi Tips
+                </a>
+
+                <a href="tentang.html" class="btn">
+                    Tentang Kami
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- =================================
+         KONTEN UTAMA
+    ================================== -->
+
+    <main class="wrap">
+
+
+        <!-- KATEGORI TIPS -->
+
+        <section id="kategori">
+
+            <div class="heading">
+
+                <h2>
+                    Jelajahi Kategori Tips
+                </h2>
+
+                <p>
+                    Pilih halaman yang ingin kamu baca dan
+                    temukan informasi sesuai kebutuhanmu.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <!-- Kartu Tips Komputer -->
+
+                <article class="card">
+
+                    <div class="emoji">💻</div>
+
+                    <h3>
+                        Tips Komputer
+                    </h3>
+
+                    <p>
+                        Pelajari cara menggunakan komputer dengan
+                        lebih mudah dan aman. Temukan informasi
+                        mengenai aplikasi, perangkat, serta
+                        perawatan komputer.
+                    </p>
+
+                    <span class="tag">
+                        Teknologi
+                    </span>
+
+                    <div class="actions">
+
+                        <a href="komputer.html" class="btn">
+                            Baca Selengkapnya
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Kartu Tips Belajar -->
+
+                <article class="card">
+
+                    <div class="emoji">📚</div>
+
+                    <h3>
+                        Tips Belajar
+                    </h3>
+
+                    <p>
+                        Temukan cara belajar yang lebih teratur
+                        dan efektif. Mulai dari mengatur jadwal,
+                        membuat catatan, hingga meningkatkan
+                        konsentrasi saat belajar.
+                    </p>
+
+                    <span class="tag">
+                        Pendidikan
+                    </span>
+
+                    <div class="actions">
+
+                        <a href="belajar.html" class="btn">
+                            Baca Selengkapnya
+                        </a>
+
+                    </div>
+
+                </article>
+
+
+                <!-- Kartu Tips Kehidupan -->
+
+                <article class="card">
+
+                    <div class="emoji">🌱</div>
+
+                    <h3>
+                        Tips Kehidupan
+                    </h3>
+
+                    <p>
+                        Pelajari kebiasaan sederhana untuk
+                        menjalani aktivitas sehari-hari,
+                        menjaga kerapian, mengatur waktu,
+                        dan membangun rutinitas positif.
+                    </p>
+
+                    <span class="tag">
+                        Keseharian
+                    </span>
+
+                    <div class="actions">
+
+                        <a href="kehidupan.html" class="btn">
+                            Baca Selengkapnya
+                        </a>
+
+                    </div>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- TIPS PILIHAN -->
+
+        <section class="tips-section">
+
+            <div class="heading">
+
+                <h2>
+                    Tips Pilihan untuk Kamu
+                </h2>
+
+                <p>
+                    Beberapa kebiasaan sederhana yang bisa
+                    mulai diterapkan dalam kegiatan sehari-hari.
+                </p>
+
+            </div>
+
+
+            <div class="grid">
+
+
+                <article class="card">
+
+                    <div class="emoji">⏰</div>
+
+                    <h3>
+                        Atur Waktu dengan Baik
+                    </h3>
+
+                    <p>
+                        Buat daftar kegiatan dan tentukan
+                        prioritas agar pekerjaan lebih teratur
+                        dan tidak mudah terlupakan.
+                    </p>
+
+                    <span class="tag">
+                        Manajemen Waktu
+                    </span>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="emoji">🔒</div>
+
+                    <h3>
+                        Jaga Keamanan Digital
+                    </h3>
+
+                    <p>
+                        Gunakan kata sandi yang kuat, jangan
+                        membagikan informasi pribadi sembarangan,
+                        dan berhati-hati saat membuka tautan.
+                    </p>
+
+                    <span class="tag">
+                        Keamanan
+                    </span>
+
+                </article>
+
+
+                <article class="card">
+
+                    <div class="emoji">📝</div>
+
+                    <h3>
+                        Biasakan Membuat Catatan
+                    </h3>
+
+                    <p>
+                        Catat informasi penting agar lebih mudah
+                        diingat dan dapat digunakan kembali
+                        ketika dibutuhkan.
+                    </p>
+
+                    <span class="tag">
+                        Produktivitas
+                    </span>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- KEUNGGULAN TIPSZONE -->
+
+        <section class="intro">
+
+            <h2>
+                Mengapa Memilih TIPSZONE?
+            </h2>
+
+            <p>
+                TIPSZONE merupakan website informasi yang
+                menyediakan berbagai tips praktis untuk
+                membantu pembaca mendapatkan pengetahuan
+                baru dalam kegiatan sehari-hari.
+            </p>
+
+            <p>
+                Informasi disusun berdasarkan beberapa kategori
+                agar pengunjung lebih mudah menemukan topik
+                yang ingin dipelajari.
+            </p>
+
+            <div class="grid">
+
+                <article class="panel">
+
+                    <div class="emoji">📖</div>
+
+                    <h3>
+                        Informasi Bermanfaat
+                    </h3>
+
+                    <p>
+                        Menyediakan informasi sederhana yang
+                        dapat menambah pengetahuan pembaca.
+                    </p>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <div class="emoji">🧭</div>
+
+                    <h3>
+                        Mudah Dipahami
+                    </h3>
+
+                    <p>
+                        Materi disajikan dengan bahasa yang
+                        sederhana dan mudah dimengerti.
+                    </p>
+
+                </article>
+
+
+                <article class="panel">
+
+                    <div class="emoji">💡</div>
+
+                    <h3>
+                        Praktis Diterapkan
+                    </h3>
+
+                    <p>
+                        Tips yang tersedia dapat dijadikan
+                        referensi untuk kegiatan sehari-hari.
+                    </p>
+
+                </article>
+
+            </div>
+
+        </section>
+
+
+        <!-- AJAKAN MENJELAJAHI WEBSITE -->
+
+        <section class="closing">
+
+            <h2>
+                Mulai Temukan Informasi yang Kamu Butuhkan!
+            </h2>
+
+            <p>
+                Jelajahi berbagai kategori di TIPSZONE dan
+                temukan tips menarik yang dapat menambah
+                pengetahuan serta membantu aktivitasmu.
+            </p>
+
+            <div class="actions">
+
+                <a href="komputer.html" class="btn">
+                    Mulai Menjelajahi
+                </a>
+
+                <a href="kontak.html" class="btn">
+                    Hubungi Kami
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+        <p>
+            © 2026 <strong>TIPSZONE</strong>
+        </p>
+
+        <p>
+            Berbagi tips, pengetahuan, dan informasi
+            bermanfaat untuk kehidupan sehari-hari.
+        </p>
+
+        <p>
+            Beranda |
+            Tips Komputer |
+            Tips Belajar |
+            Tips Kehidupan
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
