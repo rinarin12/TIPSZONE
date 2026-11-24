@@ -749,3 +749,80 @@ textarea:focus-visible {
         animation-duration: 0.01ms !important;
     }
 }
+
+/* =====================================
+   MENU RESPONSIF TIPSZONE
+===================================== */
+
+/* Tampilan komputer dan laptop */
+#menuToggle {
+    display: none;
+}
+
+/* Tampilan tablet dan HP */
+@media (max-width: 600px) {
+
+    header {
+        position: sticky;
+        top: 0;
+    }
+
+    .nav {
+        display: grid;
+        grid-template-columns: 1fr auto auto;
+        align-items: center;
+        gap: 10px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+    }
+
+    .brand {
+        font-size: 21px;
+    }
+
+    /* Tombol hamburger */
+    #menuToggle {
+        display: inline-block;
+        order: initial;
+        padding: 8px 12px;
+        font-size: 21px;
+        border-radius: 8px;
+    }
+
+    /* Tombol mode gelap */
+    #themeToggle {
+        padding: 9px 10px;
+        font-size: 11px;
+        white-space: nowrap;
+    }
+
+    /* Menu disembunyikan sebelum tombol ditekan */
+    #navMenu {
+        display: none;
+        grid-column: 1 / -1;
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 5px;
+        padding-top: 10px;
+        border-top: 1px solid #e3eaf5;
+    }
+
+    /* Menu muncul setelah tombol ditekan */
+    #navMenu.show {
+        display: flex;
+    }
+
+    #navMenu a {
+        display: block;
+        width: 100%;
+        padding: 11px 13px;
+        font-size: 14px;
+        border-radius: 8px;
+    }
+
+    /* Penyesuaian mode gelap */
+    body.dark #navMenu {
+        border-color: #344256;
+    }
+}
