@@ -904,3 +904,167 @@ body.dark .card strong {
     }
 
 }
+
+/* TEMA COKELAT + BEIGE TIPSZONE */
+
+body {
+    background: #FAF5ED;
+    color: #493729;
+}
+
+header,
+.card,
+.panel,
+.contact-form {
+    background: #FFFFFF;
+}
+
+.brand,
+.contact-label {
+    color: #8B5E3C;
+}
+
+nav a {
+    color: #493729;
+}
+
+nav a:hover,
+nav a.active {
+    background: #F0E3D3;
+    color: #8B5E3C;
+}
+
+.btn,
+button,
+#themeToggle,
+#menuToggle {
+    background: #8B5E3C;
+    color: #FFFFFF;
+}
+
+.btn:hover,
+button:hover {
+    background: #6F482F;
+}
+
+.hero {
+    background: linear-gradient(120deg, #493729, #A47752);
+}
+
+.hero .btn {
+    background: #FFFFFF;
+    color: #8B5E3C;
+}
+
+.heading h1,
+.heading h2,
+.card h3 {
+    color: #493729;
+}
+
+.card,
+.panel,
+.contact-form {
+    border-color: #E8D5BE;
+}
+
+.tag {
+    background: #F0E3D3;
+    color: #805333;
+}
+
+.intro,
+.closing {
+    background: #F0E3D3;
+}
+
+.contact-section {
+    background: linear-gradient(135deg, #F0E3D3, #FAF5ED);
+}
+
+.contact-icon {
+    background: #E8D5BE;
+}
+
+.contact-button {
+    background: linear-gradient(120deg, #6F482F, #A47752);
+}
+
+footer {
+    background: #493729;
+    color: #FFFFFF;
+}
+
+/* MODE GELAP */
+
+body.dark {
+    background: #211A15;
+    color: #F5EBDD;
+}
+
+body.dark header,
+body.dark .card,
+body.dark .panel,
+body.dark .contact-form {
+    background: #30251D;
+    border-color: #5B4635;
+}
+
+body.dark .brand,
+body.dark .contact-label {
+    color: #D5AD88;
+}
+
+body.dark nav a {
+    color: #F5EBDD;
+}
+
+body.dark nav a:hover,
+body.dark nav a.active {
+    background: #493729;
+    color: #F5D8B8;
+}
+
+body.dark .heading h1,
+body.dark .heading h2,
+body.dark .card h3,
+body.dark .contact-info h1,
+body.dark .contact-detail h3,
+body.dark .contact-form h2 {
+    color: #FFF5E8;
+}
+
+body.dark .heading p,
+body.dark .card p,
+body.dark .panel p,
+body.dark .contact-info > p,
+body.dark .contact-detail p {
+    color: #D8C7B5;
+}
+
+body.dark .intro,
+body.dark .closing,
+body.dark .contact-section {
+    background: #211A15;
+}
+
+body.dark .intro h2,
+body.dark .closing h2 {
+    color: #FFF5E8;
+}
+
+body.dark .intro p,
+body.dark .closing p {
+    color: #D8C7B5;
+}
+
+body.dark input,
+body.dark textarea {
+    background: #211A15;
+    border-color: #66503D;
+    color: #FFFFFF;
+}
+
+body.dark .contact-icon {
+    background: #493729;
+}
