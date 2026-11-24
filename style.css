@@ -855,3 +855,52 @@ body.dark .intro ul {
 body.dark .card strong {
     color: #f8fafc;
 }
+
+/* PENYEMPURNAAN RESPONSIF HALAMAN KONTAK */
+
+.contact-container {
+    width: 100%;
+}
+
+.contact-info,
+.contact-form {
+    min-width: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+    max-width: 100%;
+}
+
+.contact-form button {
+    min-height: 46px;
+}
+
+@media (max-width: 540px) {
+
+    .contact-section {
+        padding: 30px 12px;
+    }
+
+    .contact-container {
+        gap: 20px;
+    }
+
+    .contact-info h1 {
+        font-size: 32px;
+    }
+
+    .contact-form {
+        padding: 20px 16px;
+        border-radius: 14px;
+    }
+
+    .contact-form h2 {
+        font-size: 23px;
+    }
+
+    .contact-detail {
+        gap: 10px;
+    }
+
+}
