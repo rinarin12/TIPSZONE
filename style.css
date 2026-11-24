@@ -826,3 +826,32 @@ textarea:focus-visible {
         border-color: #344256;
     }
 }
+
+/* DAFTAR TIPS KOMPUTER */
+
+.card ul,
+.intro ul {
+    padding-left: 20px;
+    margin: 12px 0;
+    color: #526174;
+}
+
+.card li,
+.intro li {
+    margin-bottom: 7px;
+    line-height: 1.6;
+}
+
+.card strong {
+    color: #14213d;
+}
+
+/* MODE GELAP */
+body.dark .card ul,
+body.dark .intro ul {
+    color: #cbd5e1;
+}
+
+body.dark .card strong {
+    color: #f8fafc;
+}
