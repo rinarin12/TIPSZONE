@@ -1,124 +1,294 @@
+
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kontak - TIPSZONE</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Hubungi TIPSZONE untuk mengirim pertanyaan, saran, dan masukan mengenai informasi yang tersedia di website.">
+
+    <title>Kontak Kami | TIPSZONE</title>
+
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <div class="wrap nav">
-      <a href="index.html" class="brand">TIPSZONE</a>
+    <!-- =================================
+         HEADER DAN NAVIGASI
+    ================================== -->
 
-      <nav>
-        <a href="index.html">Beranda</a>
-        <a href="komputer.html">Tips Komputer</a>
-        <a href="belajar.html">Tips Belajar</a>
-        <a href="kehidupan.html">Tips Kehidupan</a>
-        <a href="tentang.html">Tentang Kami</a>
-        <a href="kontak.html" class="active">Kontak</a>
-      </nav>
+    <header>
+        <div class="wrap nav">
 
-      <button id="themeToggle" type="button">🌙</button>
-    </div>
-  </header>
+            <a href="index.html" class="brand">
+                TIPSZONE.
+            </a>
 
-  <!-- KONTEN KONTAK -->
-  <main class="contact-section">
-    <div class="contact-container">
+            <!-- Tombol Menu HP -->
+            <button
+                id="menuToggle"
+                type="button"
+                aria-label="Buka menu"
+                aria-expanded="false">
+                ☰
+            </button>
 
-      <!-- INFORMASI -->
-      <div class="contact-info">
-        <span class="contact-label">HUBUNGI KAMI</span>
+            <!-- Navigasi -->
+            <nav id="navMenu">
 
-        <h1>Ada Pertanyaan?</h1>
+                <a href="index.html">Beranda</a>
+
+                <a href="komputer.html">Tips Komputer</a>
+
+                <a href="belajar.html">Tips Belajar</a>
+
+                <a href="kehidupan.html">Tips Kehidupan</a>
+
+                <a href="tentang.html">Tentang Kami</a>
+
+                <a href="kontak.html" class="active">
+                    Kontak
+                </a>
+
+            </nav>
+
+            <!-- Mode Gelap -->
+            <button id="themeToggle" type="button">
+                Mode Gelap
+            </button>
+
+        </div>
+    </header>
+
+
+    <!-- =================================
+         KONTEN KONTAK
+    ================================== -->
+
+    <main class="contact-section">
+
+        <div class="contact-container">
+
+
+            <!-- INFORMASI KONTAK -->
+
+            <section class="contact-info">
+
+                <span class="contact-label">
+                    HUBUNGI KAMI
+                </span>
+
+                <h1>
+                    Ada Pertanyaan?
+                </h1>
+
+                <p>
+                    Punya pertanyaan, saran, atau ingin
+                    memberikan masukan mengenai website
+                    TIPSZONE? Jangan ragu untuk menghubungi
+                    kami melalui formulir yang tersedia.
+                </p>
+
+
+                <!-- INFORMASI 1 -->
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        ✉️
+                    </div>
+
+                    <div>
+                        <h3>
+                            Email
+                        </h3>
+
+                        <p>
+                            Kirim pertanyaan dan saran
+                            melalui formulir kontak.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMASI 2 -->
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        💬
+                    </div>
+
+                    <div>
+                        <h3>
+                            Pesan dan Saran
+                        </h3>
+
+                        <p>
+                            Sampaikan pendapat atau masukan
+                            untuk pengembangan website.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMASI 3 -->
+
+                <div class="contact-detail">
+
+                    <div class="contact-icon">
+                        🌐
+                    </div>
+
+                    <div>
+                        <h3>
+                            TIPSZONE
+                        </h3>
+
+                        <p>
+                            Berbagi tips dan informasi
+                            bermanfaat untuk semua pengunjung.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <!-- INFORMASI TAMBAHAN -->
+
+                <div class="panel">
+
+                    <h3>
+                        Kami Menghargai Masukanmu!
+                    </h3>
+
+                    <p>
+                        Setiap pertanyaan dan saran dapat
+                        menjadi bahan evaluasi untuk
+                        meningkatkan kualitas informasi
+                        yang tersedia di TIPSZONE.
+                    </p>
+
+                </div>
+
+            </section>
+
+
+            <!-- FORMULIR KONTAK -->
+
+            <section class="contact-form">
+
+                <h2>
+                    Kirim Pesan
+                </h2>
+
+                <p class="form-description">
+                    Silakan isi formulir berikut dengan
+                    informasi yang sesuai.
+                </p>
+
+
+                <form
+                    action="https://formspree.io/f/xppddaen"
+                    method="POST">
+
+                    <!-- NAMA -->
+
+                    <label for="nama">
+                        Nama Lengkap
+                    </label>
+
+                    <input
+                        type="text"
+                        id="nama"
+                        name="nama"
+                        placeholder="Masukkan nama kamu"
+                        autocomplete="name"
+                        required
+                    >
+
+
+                    <!-- EMAIL -->
+
+                    <label for="email">
+                        Alamat Email
+                    </label>
+
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="nama@email.com"
+                        autocomplete="email"
+                        required
+                    >
+
+
+                    <!-- PESAN -->
+
+                    <label for="pesan">
+                        Pesan Kamu
+                    </label>
+
+                    <textarea
+                        id="pesan"
+                        name="pesan"
+                        placeholder="Tuliskan pertanyaan atau pesan kamu..."
+                        rows="6"
+                        required
+                    ></textarea>
+
+
+                    <!-- TOMBOL KIRIM -->
+
+                    <button
+                        type="submit"
+                        class="contact-button">
+
+                        Kirim Pesan
+                        <span>➜</span>
+
+                    </button>
+
+                    <p class="muted">
+                        Pastikan semua kolom sudah diisi
+                        sebelum mengirim pesan.
+                    </p>
+
+                </form>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
 
         <p>
-          Punya pertanyaan, saran, atau ingin berbagi pengalaman?
-          Jangan ragu untuk menghubungi kami melalui formulir ini.
+            © 2026 <strong>TIPSZONE</strong>.
+            Semua Hak Dilindungi.
         </p>
 
-        <div class="contact-detail">
-          <div class="contact-icon">✉️</div>
-          <div>
-            <h3>Email</h3>
-            <p>Kirim pertanyaan dan saran kepada kami.</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">💬</div>
-          <div>
-            <h3>Pesan</h3>
-            <p>Sampaikan pesan kamu melalui formulir.</p>
-          </div>
-        </div>
-
-        <div class="contact-detail">
-          <div class="contact-icon">🌐</div>
-          <div>
-            <h3>TIPSZONE</h3>
-            <p>Berbagi tips dan informasi bermanfaat.</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- FORMULIR -->
-      <div class="contact-form">
-        <h2>Kirim Pesan</h2>
-
-        <p class="form-description">
-          Isi formulir berikut dengan lengkap.
+        <p>
+            Berbagi Tips, Menambah Pengetahuan.
         </p>
 
-        <form action="https://formspree.io/f/xppddaen" method="POST">
+    </footer>
 
-          <label for="nama">Nama Lengkap</label>
-          <input
-            type="text"
-            id="nama"
-            name="nama"
-            placeholder="Masukkan nama kamu"
-            required
-          >
 
-          <label for="email">Alamat Email</label>
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="nama@email.com"
-            required
-          >
+    <!-- JAVASCRIPT -->
 
-          <label for="pesan">Pesan Kamu</label>
-          <textarea
-            id="pesan"
-            name="pesan"
-            placeholder="Tuliskan pertanyaan atau pesan kamu..."
-            required
-          ></textarea>
-
-          <button type="submit" class="contact-button">
-            Kirim Pesan <span>➜</span>
-          </button>
-
-        </form>
-      </div>
-
-    </div>
-  </main>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>&copy; 2026 TIPSZONE. Semua Hak Dilindungi.</p>
-    <p>Berbagi Tips, Menambah Pengetahuan.</p>
-  </footer>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
 </html>
